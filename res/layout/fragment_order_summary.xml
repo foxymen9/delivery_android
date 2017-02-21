@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearlayout_delivery_info"
+       	android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical" >
+
+        <com.delivery.AsyncImageLoad.AsyncThumbnailView
+            android:id="@+id/imageview_office_logo"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textview_delivery_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textview_delivery_instructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:textColor="@color/dark_text_color"
+                android:text="TextView" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/linearlayout_delivery_info"
+        android:background="@android:color/darker_gray" />
+
+    <ListView
+        android:id="@+id/listview_order_summary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_line"
+        android:layout_above="@+id/linearlayout_prices"
+        android:choiceMode="singleChoice"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_prices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom = "true"
+        android:background="#EFEFF4"
+        android:orientation="vertical" >
+
+        <View
+	        android:id="@+id/view_line2"
+	        android:layout_width="match_parent"
+	        android:layout_height="2dp"
+	        android:background="@android:color/darker_gray" />
+	        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="3dp" >
+            
+            <TextView
+                android:id="@+id/textview_subtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="Subtotal" />
+            
+            <View
+		        android:id="@+id/view_padding1"
+		        android:layout_width="0dp"
+		        android:layout_height="0dp"
+		        android:layout_weight="1" />
+	            
+            <TextView
+                android:id="@+id/textview_subtotal_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="$1.00" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="2dp" >
+            
+            <TextView
+                android:id="@+id/textview_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="Delivery" />
+            
+            <View
+		        android:id="@+id/view_padding2"
+		        android:layout_width="0dp"
+		        android:layout_height="0dp"
+		        android:layout_weight="1" />
+	            
+            <TextView
+                android:id="@+id/textview_delivery_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="$1.00" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="2dp" >
+            
+            <TextView
+                android:id="@+id/textview_tax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="Tax" />
+            
+            <View
+		        android:id="@+id/view_padding3"
+		        android:layout_width="0dp"
+		        android:layout_height="0dp"
+		        android:layout_weight="1" />
+	            
+            <TextView
+                android:id="@+id/textview_tax_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="$1.00" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="2dp" >
+            
+            <TextView
+                android:id="@+id/textview_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="Discount" />
+            
+            <View
+		        android:id="@+id/view_padding4"
+		        android:layout_width="0dp"
+		        android:layout_height="0dp"
+		        android:layout_weight="1" />
+	            
+            <TextView
+                android:id="@+id/textview_discount_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="$1.00" />
+            
+        </LinearLayout>
+        
+        <View
+	        android:id="@+id/view_line3"
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="@android:color/darker_gray" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="2dp" >
+            
+            <TextView
+                android:id="@+id/textview_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="Total" />
+            
+            <View
+		        android:id="@+id/view_padding5"
+		        android:layout_width="0dp"
+		        android:layout_height="0dp"
+		        android:layout_weight="1" />
+	            
+            <TextView
+                android:id="@+id/textview_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="$1.00" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp"
+	        android:gravity="center_horizontal">
+	        
+	        <Button
+	            android:id="@+id/button_express_checkout"
+	            android:layout_width="100dp"
+	            android:layout_height="30dp"
+	            android:background="@drawable/button_selector_background"
+	            android:text="Express Checkout"
+	            android:textColor="@android:color/white"
+	            android:textSize="11sp" />
+	
+	        <Button
+	            android:id="@+id/button_checkout"
+	            android:layout_width="100dp"
+	            android:layout_height="30dp"
+	            android:layout_marginLeft="30dp"
+	            android:background="@drawable/button_selector_background"
+	            android:text="Checkout"
+	            android:textColor="@android:color/white"
+	            android:textSize="14sp" />
+	        
+    	</LinearLayout>       
+
+    </LinearLayout>
+        
+</RelativeLayout>

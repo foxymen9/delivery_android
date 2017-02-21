@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Foodsby</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="main_menu_items">
+        <item >Home</item>
+        <item >Order Summary</item>
+        <item >User Profile</item>
+        <item >Notifications</item>
+        <item >Change Office</item>
+        <item >Logout</item>
+        
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="main_menu_icons">
+        <item>@drawable/home_button</item>
+        <item>@drawable/cart</item>
+        <item>@drawable/user_profile_button</item>
+        <item>@drawable/notification_button</item>
+        <item>@drawable/change_location_button</item>
+        <item>@drawable/logoff_button</item>
+        
+    </array>
+    
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    
+</resources>

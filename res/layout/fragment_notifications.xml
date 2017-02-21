@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+	<TextView
+	    android:id="@+id/textview1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+	    android:textSize="11sp"
+	    android:text="Set up the restaurants from which you'd like to receive notifications. You'll receive push notifications at your specified time before the order cutoff time." />
+		    
+    <LinearLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"        
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:text="Notification Time" />
+
+     	<View
+	        android:id="@+id/view_padding"
+	        android:layout_width="0dp"
+	        android:layout_height="0dp"
+	        android:layout_weight="1" />
+     
+        <Spinner
+	        android:id="@+id/spinner_notifications_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop ="10dp"
+	        android:paddingBottom ="10dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <ListView
+        android:id="@+id/listview_notifications"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:dividerHeight="1dp" >
+    </ListView>
+    
+</LinearLayout>

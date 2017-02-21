@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+	<LinearLayout
+	    android:id="@+id/linearlayout_invite_coworks"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_above="@+id/linearlayout_tabbar"
+	    android:orientation="vertical">
+	
+	    <LinearLayout
+	        android:id="@+id/linearlayout_office_info1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:orientation="vertical" >
+	
+	        <TextView
+	            android:id="@+id/textview_worker_office_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dp"
+	        	android:layout_marginRight="20dp"
+	            android:textSize="14sp"
+	            android:textStyle="bold"
+	            android:text="Text" />
+	        
+	        <TextView
+	            android:id="@+id/textview_worker_office_count"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dp"
+	        	android:layout_marginRight="20dp"
+	        	android:layout_marginTop="5dp"
+	        	android:textColor="#013045"
+	            android:textSize="13sp"
+	            android:text="Text" />
+	        
+	        <TextView
+	            android:id="@+id/textview_worker_office_address"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dp"
+	        	android:layout_marginRight="20dp"
+	        	android:layout_marginTop="5dp"
+	        	android:textColor="#013045"
+	        	android:layout_marginBottom="5dp"
+	        	android:textSize="13sp"
+	            android:text="Text" />
+	        
+	        <View
+		        android:id="@+id/view_line1"
+		        android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:background="@android:color/darker_gray" />
+	
+	    </LinearLayout>
+	    
+	    
+		<ScrollView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+		    	    
+			    <TextView
+			    	android:id="@+id/textView1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:textSize="14sp"
+			        android:textStyle="bold"
+			        android:text="Invite Co-Workers via Contacts" />
+			    
+			    <Button
+			        android:id="@+id/button_find_contracts"
+			        android:layout_width="120dp"
+			        android:layout_height="30dp"
+			        android:layout_marginTop="20dp"
+			        android:layout_marginBottom="20dp"
+			        android:layout_gravity="center"  
+			        android:background="@drawable/button_selector_background"
+			        android:text="Find Contracts"
+			        android:textColor="@android:color/white"
+			        android:textSize="14sp" />
+			    
+			    <TextView
+			    	android:id="@+id/textView2"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:textSize="14sp"
+			        android:textStyle="bold"
+			        android:text="Invite Co-Workers via Email" />
+	    
+			    <EditText
+			        android:id="@+id/edittext_email_address1"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="5dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:paddingLeft ="10dp"
+			        android:paddingRight ="10dp"
+			        android:paddingTop ="10dp"
+			        android:paddingBottom ="10dp"
+			        android:textSize="13sp"
+			        android:ems="10"
+			        android:selectAllOnFocus="true"
+			        android:singleLine="true"
+			        android:inputType="textEmailAddress"
+			        android:background="#ffffff"/>
+			
+			    <EditText
+			        android:id="@+id/edittext_email_address2"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="5dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:paddingLeft ="10dp"
+			        android:paddingRight ="10dp"
+			        android:paddingTop ="10dp"
+			        android:paddingBottom ="10dp"
+			        android:textSize="13sp"
+			        android:ems="10"
+			        android:selectAllOnFocus="true"
+			        android:singleLine="true"
+			        android:inputType="textEmailAddress"
+			        android:background="#ffffff"/>
+	
+			     <EditText
+			        android:id="@+id/edittext_email_address3"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="5dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:paddingLeft ="10dp"
+			        android:paddingRight ="10dp"
+			        android:paddingTop ="10dp"
+			        android:paddingBottom ="10dp"
+			        android:textSize="13sp"
+			        android:ems="10"
+			        android:selectAllOnFocus="true"
+			        android:singleLine="true"
+			        android:inputType="textEmailAddress"
+			        android:background="#ffffff"/>
+
+			</LinearLayout>
+	        
+	    </ScrollView>
+	    
+	    <Button
+	        android:id="@+id/button_send"
+	        android:layout_width="100dp"
+	        android:layout_height="30dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_gravity="center"  
+	        android:background="@drawable/button_selector_background"
+	        android:text="Send"
+	        android:textColor="@android:color/white"
+	        android:textSize="14sp" />
+	    
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:id="@+id/linearlayout_status"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_above="@+id/linearlayout_tabbar"
+	    android:visibility="gone"
+	    android:orientation="vertical">
+	
+	    <LinearLayout
+	        android:id="@+id/linearlayout_office_info2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:orientation="vertical" >
+	
+	        <TextView
+	            android:id="@+id/textview_status_office_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dp"
+	        	android:layout_marginRight="20dp"
+	            android:textSize="14sp"
+	            android:textStyle="bold"
+	            android:text="Text" />
+	        
+	        <TextView
+	            android:id="@+id/textview_status_office_count"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dp"
+	        	android:layout_marginRight="20dp"
+	        	android:layout_marginTop="5dp"
+	        	android:textColor="#013045"
+	            android:textSize="13sp"
+	            android:text="Text" />
+	        
+	        <TextView
+	            android:id="@+id/textview_status_office_address"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dp"
+	        	android:layout_marginRight="20dp"
+	        	android:layout_marginTop="5dp"
+	        	android:textColor="#013045"
+	        	android:layout_marginBottom="5dp"
+	        	android:textSize="13sp"
+	            android:text="Text" />
+	        
+	        <View
+		        android:id="@+id/view_line2"
+		        android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:background="@android:color/darker_gray" />
+	
+	    </LinearLayout>
+	
+	    <TextView
+	    	android:id="@+id/textView3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="20dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="10dp"
+	        android:textSize="14sp"
+	        android:textStyle="bold"
+	        android:text="Location Status: Pending" />
+	    
+        <TextView
+            android:id="@+id/textview_status_location_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginRight="20dp"
+        	android:layout_marginTop="5dp"
+        	android:textColor="#013045"
+            android:textSize="13sp"
+            android:text="Text" />
+    
+        <TextView
+            android:id="@+id/textview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginRight="20dp"
+        	android:layout_marginTop="5dp"
+        	android:textColor="#013045"
+            android:textSize="13sp"
+            android:text="Keep inviting co-workers and you'll be on your way to having restaurants delivering to your location." />
+        
+	    
+	</LinearLayout>
+	
+	<LinearLayout
+        android:id="@+id/linearlayout_tabbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom = "true"
+        android:background="#222222"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+	    <LinearLayout
+	        android:id="@+id/linearlayout_tab1"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:background="@color/main_background_color"
+	        android:clickable="true"
+	        android:orientation="vertical" >
+
+	        <ImageView
+	            android:id="@+id/imageview_tab1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/worker" />
+	
+	        <TextView
+	            android:id="@+id/textview_tab_name1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dp"
+	        	android:layout_marginRight="20dp"
+	        	android:textColor="#ffffff"
+	            android:textSize="13sp"
+	            android:text="Invite Co-Workers" />
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/linearlayout_tab2"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:clickable="true"
+	        android:orientation="vertical" >
+
+	        <ImageView
+	            android:id="@+id/imageview_tab2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/status" />
+	
+	        <TextView
+	            android:id="@+id/textview_tab_name2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dp"
+	        	android:layout_marginRight="20dp"
+	        	android:textColor="#ffffff"
+	            android:textSize="13sp"
+	            android:text="Status" />
+	        
+	    </LinearLayout>
+
+    </LinearLayout>
+    
+</RelativeLayout>

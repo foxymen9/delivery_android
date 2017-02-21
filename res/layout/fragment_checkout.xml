@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+	
+	    <TextView
+	    	android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:textSize="14sp"
+	        android:textStyle="bold"
+	        android:text="Customer Contact Information" />
+	    
+	    <ScrollView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	
+			    <EditText
+			        android:id="@+id/edittext_full_name"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="5dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:hint="Full Name"
+			        android:paddingLeft ="10dp"
+			        android:paddingRight ="10dp"
+			        android:paddingTop ="10dp"
+			        android:paddingBottom ="10dp"
+			        android:textSize="13sp"
+			        android:inputType="textPersonName"
+			        android:ems="10"
+			        android:selectAllOnFocus="true"
+			        android:singleLine="true"
+			        android:background="#ffffff"/>
+			
+			    <EditText
+			        android:id="@+id/edittext_credit_card_number"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="5dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:hint="Credit Card Number"
+			        android:paddingLeft ="10dp"
+			        android:paddingRight ="10dp"
+			        android:paddingTop ="10dp"
+			        android:paddingBottom ="10dp"
+			        android:textSize="13sp"
+			        android:ems="10"
+			        android:inputType="number"
+			        android:selectAllOnFocus="true"
+			        android:singleLine="true"
+			        android:background="#ffffff"/>
+	
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content" >
+			        
+			        <Spinner
+				        android:id="@+id/spinner_expire_month"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginTop="5dp"
+				        android:layout_marginLeft="10dp"
+				        android:layout_marginRight="10dp"
+				        android:paddingLeft ="20dp"
+				        android:paddingRight ="20dp"
+				        android:paddingTop ="10dp"
+				        android:paddingBottom ="10dp"/>
+			        
+			        <View
+				        android:id="@+id/view_padding"
+				        android:layout_width="0dp"
+				        android:layout_height="0dp"
+				        android:layout_weight="1" />
+						        
+			        <Spinner
+				        android:id="@+id/spinner_expire_year"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginTop="5dp"
+				        android:layout_marginLeft="10dp"
+				        android:layout_marginRight="10dp"
+				        android:paddingLeft ="20dp"
+				        android:paddingRight ="20dp"
+				        android:paddingTop ="10dp"
+				        android:paddingBottom ="10dp"/>
+			        
+			    </LinearLayout>
+			    
+			    <EditText
+			        android:id="@+id/edittext_cvv"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="5dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:hint="CVV"
+			        android:paddingLeft ="10dp"
+			        android:paddingRight ="10dp"
+			        android:paddingTop ="10dp"
+			        android:paddingBottom ="10dp"
+			        android:textSize="13sp"
+			        android:ems="10"
+			        android:selectAllOnFocus="true"
+			        android:singleLine="true"
+			        android:background="#ffffff"/>
+	    
+	        </LinearLayout>
+	        
+	    </ScrollView>
+	    
+	    
+	    
+	   	<TextView
+	    	android:id="@+id/textView2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:textSize="14sp"
+	        android:textStyle="bold"
+	        android:text="Billing Address" />
+	    
+	    <ScrollView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	
+			    <EditText
+			        android:id="@+id/edittext_billing_address1"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="5dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:hint="Billing Address Line 1"
+			        android:paddingLeft ="10dp"
+			        android:paddingRight ="10dp"
+			        android:paddingTop ="10dp"
+			        android:paddingBottom ="10dp"
+			        android:textSize="13sp"
+			        android:ems="10"
+			        android:selectAllOnFocus="true"
+			        android:singleLine="true"
+			        android:background="#ffffff"/>
+			
+			    <EditText
+			        android:id="@+id/edittext_billing_address2"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="5dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:hint="Billing Address Line 2"
+			        android:paddingLeft ="10dp"
+			        android:paddingRight ="10dp"
+			        android:paddingTop ="10dp"
+			        android:paddingBottom ="10dp"
+			        android:textSize="13sp"
+			        android:ems="10"
+			        android:selectAllOnFocus="true"
+			        android:singleLine="true"
+			        android:background="#ffffff"/>
+	
+			     <EditText
+			        android:id="@+id/edittext_city"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="5dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:hint="City"
+			        android:paddingLeft ="10dp"
+			        android:paddingRight ="10dp"
+			        android:paddingTop ="10dp"
+			        android:paddingBottom ="10dp"
+			        android:textSize="13sp"
+			        android:ems="10"
+			        android:selectAllOnFocus="true"
+			        android:singleLine="true"
+			        android:background="#ffffff"/>
+			     
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+				    android:layout_marginRight="10dp">
+			        
+			        <Spinner
+				        android:id="@+id/spinner_state"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginTop="5dp"
+				        android:paddingTop ="10dp"
+				        android:paddingBottom ="10dp"/>
+			        
+			        <View
+				        android:id="@+id/view_padding2"
+				        android:layout_width="0dp"
+				        android:layout_height="0dp"
+				        android:layout_weight="1" />
+						        
+			        <EditText
+				        android:id="@+id/edittext_zip"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginTop="5dp"
+				        android:hint="Zip"
+				        android:paddingLeft ="10dp"
+				        android:paddingRight ="10dp"
+				        android:paddingTop ="10dp"
+				        android:paddingBottom ="10dp"
+				        android:textSize="13sp"
+				        android:ems="10"
+				        android:inputType="number"
+				        android:selectAllOnFocus="true"
+				        android:singleLine="true"
+				        android:background="#ffffff"/>
+			    </LinearLayout>
+			   
+	    
+	        </LinearLayout>
+	        
+	    </ScrollView>
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <TextView
+	            android:id="@+id/textView3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft ="10dp"
+	            android:text="Save credit card for future orders?" />
+	
+	 		<View
+		        android:id="@+id/view_padding3"
+		        android:layout_width="0dp"
+		        android:layout_height="0dp"
+		        android:layout_weight="1" />
+						                
+	        <Switch
+	            android:id="@+id/switch1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight ="10dp"
+	            android:text="" />
+	
+	    </LinearLayout>
+	    
+	    <Button
+            android:id="@+id/button_place_order"
+	        android:layout_width="100dp"
+	        android:layout_height="30dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_gravity="center"  
+	        android:background="@drawable/button_selector_background"
+	        android:text="Place Order"
+	        android:textColor="@android:color/white"
+	        android:textSize="14sp" />
+	    
+	    <LinearLayout
+	        android:id="@+id/linearlayout_prices"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="5dp"
+	        android:background="#EFEFF4"
+	        android:orientation="vertical" >
+	
+	        <View
+		        android:id="@+id/view_line2"
+		        android:layout_width="match_parent"
+		        android:layout_height="2dp"
+		        android:background="@android:color/darker_gray" />
+		        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"
+	            android:layout_marginTop="3dp" >
+	            
+	            <TextView
+	                android:id="@+id/textview_subtotal"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="13sp"
+	                android:text="Subtotal" />
+	            
+	            <View
+			        android:id="@+id/view_padding1"
+			        android:layout_width="0dp"
+			        android:layout_height="0dp"
+			        android:layout_weight="1" />
+		            
+	            <TextView
+	                android:id="@+id/textview_subtotal_price"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="13sp"
+	                android:text="$1.00" />
+	            
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"
+	            android:layout_marginTop="2dp" >
+	            
+	            <TextView
+	                android:id="@+id/textview_delivery"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="13sp"
+	                android:text="Delivery" />
+	            
+	            <View
+			        android:id="@+id/view_padding4"
+			        android:layout_width="0dp"
+			        android:layout_height="0dp"
+			        android:layout_weight="1" />
+		            
+	            <TextView
+	                android:id="@+id/textview_delivery_price"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="13sp"
+	                android:text="$1.00" />
+	            
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"
+	            android:layout_marginTop="2dp" >
+	            
+	            <TextView
+	                android:id="@+id/textview_tax"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="13sp"
+	                android:text="Tax" />
+	            
+	            <View
+			        android:id="@+id/view_padding5"
+			        android:layout_width="0dp"
+			        android:layout_height="0dp"
+			        android:layout_weight="1" />
+		            
+	            <TextView
+	                android:id="@+id/textview_tax_price"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="13sp"
+	                android:text="$1.00" />
+	            
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"
+	            android:layout_marginTop="2dp" >
+	            
+	            <TextView
+	                android:id="@+id/textview_discount"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="13sp"
+	                android:text="Discount" />
+	            
+	            <View
+			        android:id="@+id/view_padding6"
+			        android:layout_width="0dp"
+			        android:layout_height="0dp"
+			        android:layout_weight="1" />
+		            
+	            <TextView
+	                android:id="@+id/textview_discount_price"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="13sp"
+	                android:text="$1.00" />
+	            
+	        </LinearLayout>
+	        
+	        <View
+		        android:id="@+id/view_line3"
+		        android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        android:background="@android:color/darker_gray" />
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"
+	            android:layout_marginTop="2dp" >
+	            
+	            <TextView
+	                android:id="@+id/textview_total"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="13sp"
+	                android:text="Total" />
+	            
+	            <View
+			        android:id="@+id/view_padding7"
+			        android:layout_width="0dp"
+			        android:layout_height="0dp"
+			        android:layout_weight="1" />
+		            
+	            <TextView
+	                android:id="@+id/textview_total_price"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="13sp"
+	                android:text="$1.00" />
+	            
+	        </LinearLayout>
+	
+	    </LinearLayout>
+	    
+	</LinearLayout>
+
+</ScrollView>

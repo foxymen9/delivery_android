@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+	
+	    <TextView
+	    	android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:textSize="14sp"
+	        android:textStyle="bold"
+	        android:text="Your Contact Information" />
+	    
+	    <ScrollView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	
+			    <EditText
+			        android:id="@+id/edittext_email"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="5dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:hint="Email"
+			        android:paddingLeft ="10dp"
+			        android:paddingRight ="10dp"
+			        android:paddingTop ="10dp"
+			        android:paddingBottom ="10dp"
+			        android:textSize="13sp"
+			        android:inputType="textEmailAddress"
+			        android:ems="10"
+			        android:selectAllOnFocus="true"
+			        android:singleLine="true"
+			        android:background="#ffffff"/>
+			
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content" >
+			        
+				    <EditText
+				        android:id="@+id/edittext_first_name"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginTop="5dp"
+				        android:layout_marginLeft="10dp"
+				        android:layout_marginRight="10dp"
+				        android:hint="First Name"
+				        android:paddingLeft ="10dp"
+				        android:paddingRight ="10dp"
+				        android:paddingTop ="10dp"
+				        android:paddingBottom ="10dp"
+				        android:textSize="13sp"
+				        android:ems="10"
+				        android:selectAllOnFocus="true"
+				        android:singleLine="true"
+				        android:background="#ffffff"/>
+			        
+			        <View
+				        android:id="@+id/view_padding"
+				        android:layout_width="0dp"
+				        android:layout_height="0dp"
+				        android:layout_weight="1" />
+						        
+			        <EditText
+				        android:id="@+id/edittext_last_name"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginTop="5dp"
+				        android:layout_marginLeft="10dp"
+				        android:layout_marginRight="10dp"
+				        android:hint="Last Name"
+				        android:paddingLeft ="10dp"
+				        android:paddingRight ="10dp"
+				        android:paddingTop ="10dp"
+				        android:paddingBottom ="10dp"
+				        android:textSize="13sp"
+				        android:ems="10"
+				        android:selectAllOnFocus="true"
+				        android:singleLine="true"
+				        android:background="#ffffff"/>
+			        
+			    </LinearLayout>
+			    
+			    <EditText
+			        android:id="@+id/edittext_phone_number"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="5dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:hint="Phone Number"
+			        android:paddingLeft ="10dp"
+			        android:paddingRight ="10dp"
+			        android:paddingTop ="10dp"
+			        android:paddingBottom ="10dp"
+			        android:textSize="13sp"
+			        android:ems="10"
+			        android:inputType="number"
+			        android:selectAllOnFocus="true"
+			        android:singleLine="true"
+			        android:background="#ffffff"/>
+			    
+			    <Button
+		            android:id="@+id/button_save_contact"
+			        android:layout_width="100dp"
+			        android:layout_height="30dp"
+			        android:layout_marginTop="10dp"
+			        android:layout_marginBottom="10dp"
+			        android:layout_gravity="center"  
+			        android:background="@drawable/button_selector_background"
+			        android:text="Save"
+			        android:textColor="@android:color/white"
+			        android:textSize="14sp" />
+	    
+			    <View
+			        android:id="@+id/view_line1"
+			        android:layout_width="match_parent"
+			        android:layout_height="1dp"
+			        android:background="@android:color/darker_gray" />
+			    
+	        </LinearLayout>
+	        
+	    </ScrollView>
+	    
+	    
+	    
+	   	<TextView
+	    	android:id="@+id/textView2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:textSize="14sp"
+	        android:textStyle="bold"
+	        android:text="Change Your Password" />
+	    
+	    <ScrollView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	
+			    <EditText
+			        android:id="@+id/edittext_current_password"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="5dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:hint="Current Password"
+			        android:paddingLeft ="10dp"
+			        android:paddingRight ="10dp"
+			        android:paddingTop ="10dp"
+			        android:paddingBottom ="10dp"
+			        android:textSize="13sp"
+			        android:ems="10"
+			        android:selectAllOnFocus="true"
+			        android:singleLine="true"
+			        android:background="#ffffff"/>
+			
+			    <EditText
+			        android:id="@+id/edittext_new_password"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="5dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:hint="New Password"
+			        android:paddingLeft ="10dp"
+			        android:paddingRight ="10dp"
+			        android:paddingTop ="10dp"
+			        android:paddingBottom ="10dp"
+			        android:textSize="13sp"
+			        android:ems="10"
+			        android:selectAllOnFocus="true"
+			        android:singleLine="true"
+			        android:background="#ffffff"/>
+	
+			     <EditText
+			        android:id="@+id/edittext_confirm_new_password"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="5dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:hint="Confirm New Password"
+			        android:paddingLeft ="10dp"
+			        android:paddingRight ="10dp"
+			        android:paddingTop ="10dp"
+			        android:paddingBottom ="10dp"
+			        android:textSize="13sp"
+			        android:ems="10"
+			        android:selectAllOnFocus="true"
+			        android:singleLine="true"
+			        android:background="#ffffff"/>
+			     
+			      <Button
+		            android:id="@+id/button_save_password"
+			        android:layout_width="100dp"
+			        android:layout_height="30dp"
+			        android:layout_marginTop="10dp"
+			        android:layout_marginBottom="10dp"
+			        android:layout_gravity="center"  
+			        android:background="@drawable/button_selector_background"
+			        android:text="Save"
+			        android:textColor="@android:color/white"
+			        android:textSize="14sp" />
+	    
+			    <View
+			        android:id="@+id/view_line2"
+			        android:layout_width="match_parent"
+			        android:layout_height="1dp"
+			        android:background="@android:color/darker_gray" />
+			    
+	        </LinearLayout>
+	        
+	    </ScrollView>
+	
+	    <TextView
+	    	android:id="@+id/textView3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:textSize="14sp"
+	        android:textStyle="bold"
+	        android:text="Text Message Notifications" />
+     
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="5dp" >
+	
+	        <TextView
+	            android:id="@+id/textView4"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft ="10dp"
+	            android:text="When deliveries are made" />
+	
+	 		<View
+		        android:id="@+id/view_padding3"
+		        android:layout_width="0dp"
+		        android:layout_height="0dp"
+		        android:layout_weight="1" />
+						                
+	        <Switch
+	            android:id="@+id/switch1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight ="10dp"
+	            android:text="" />
+	
+	    </LinearLayout>
+	    
+	   	<View
+	        android:id="@+id/view_line3"
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="@android:color/darker_gray" />
+	   	
+	    <TextView
+	    	android:id="@+id/textView5"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:textSize="14sp"
+	        android:textStyle="bold"
+	        android:text="Your Default Credit Card" />
+	    
+	    <ScrollView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="20dp"
+	            android:orientation="vertical" >
+	
+			    <EditText
+			        android:id="@+id/edittext_credit_card"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="5dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:hint="Credit Card"
+			        android:paddingLeft ="10dp"
+			        android:paddingRight ="10dp"
+			        android:paddingTop ="10dp"
+			        android:paddingBottom ="10dp"
+			        android:textSize="13sp"
+			        android:ems="10"
+			        android:selectAllOnFocus="true"
+			        android:singleLine="true"
+			        android:background="#ffffff"/>
+	    
+	        </LinearLayout>
+	        
+	    </ScrollView>
+	    
+	</LinearLayout>
+
+</ScrollView>

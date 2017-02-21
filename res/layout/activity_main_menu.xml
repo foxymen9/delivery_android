@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slidemenu="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    slidemenu:layout_role="content"
+    android:orientation="vertical" >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:background="@color/main_background_color"
+	    android:orientation="horizontal" >
+	
+		<ImageButton
+		    android:id="@+id/imagebutton_menu_back"
+		    android:layout_width="30dp"
+	        android:layout_height="match_parent"
+	        android:background="@android:color/transparent"
+	        android:src="@drawable/back_button"
+	        android:layout_marginLeft="10dp"
+	        android:onClick="onClickBack"/>
+	
+	    <TextView
+	        android:id="@+id/textview_title"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="Title"
+	        android:background="@android:color/transparent"
+	        android:textColor="@android:color/white"
+	        android:textSize="24sp" />
+	     
+	    <LinearLayout
+		    android:id="@+id/linearlayout_title"
+		    android:layout_width="0dp"
+		    android:layout_height="40dp"
+		    android:background="@color/main_background_color"
+		    android:layout_weight="1"
+		    android:orientation="vertical"
+		    android:visibility="gone" >
+		
+		    <TextView
+		        android:id="@+id/textview_main_title"
+		        android:layout_width="match_parent"
+		        android:layout_height="20dp"
+		        android:gravity="center"
+		        android:text="Title"
+		        android:background="@android:color/transparent"
+		        android:textColor="@android:color/white"                
+		        android:textSize="18sp" />
+		    
+		    <TextView
+		        android:id="@+id/textview_sub_title"
+		        android:layout_width="match_parent"
+		        android:layout_height="20dp"
+		        android:gravity="center"
+		        android:text="Sub Title"
+		        android:background="@android:color/transparent"
+		        android:textColor="@android:color/white"                
+		        android:textSize="12sp" />
+		     
+		</LinearLayout>
+	     
+	    <ImageButton
+	        android:id="@+id/imagebutton_menu"
+	        android:layout_width="30dp"
+	        android:layout_height="match_parent"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginRight="10dp"
+	        android:background="@android:color/transparent"
+	        android:onClick="onMenu"
+	        android:src="@drawable/menu_button" />
+	    
+	</LinearLayout>
+	
+    <FrameLayout
+        android:id="@+id/fragmentlayout_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >         
+    </FrameLayout>
+
+</LinearLayout>
